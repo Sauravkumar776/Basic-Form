@@ -1,0 +1,61 @@
+h1, p {
+  font-family: Lato;
+}
+
+.details {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: auto auto;
+  display: flex;
+  box-shadow: 0 0 10px black;
+  color: orange;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  font-size: 22px;
+  vertical-align: text-top;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  color: lightblue;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.table{
+  display: flex;
+  width: 400px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: auto auto;
+  box-shadow: 0 0 10px black;
+  color: red;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+td{
+  color: black;
+  margin: auto;
+  padding: auto;
+}
+
+th{
+  margin: 20px;
+  padding: 20px;
+}
