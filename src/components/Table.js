@@ -6,11 +6,13 @@ return(
   <div className="table">
   <table>
     <tr>
+      <th>Title</th>
       <th>Name</th>
       <th>Email</th>
       <th>PhoneNumber </th>
     </tr>
     <tr>
+      <td>{formData.Title}</td>
       <td>{formData.Name}</td>
       <td>{formData.Email}</td>
       <td>{formData.PhoneNumber}</td>

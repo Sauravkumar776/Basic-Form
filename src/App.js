@@ -7,15 +7,16 @@ import Table from './components/Table.js'
 export default function App() {
 
   const [formData, setFormData] = useState({
+    Title:"",
     Name: "",
     Email: "",
     PhoneNumber: ""
   })
 
-
   const { register, handleSubmit, formState: { errors } } = useForm();
   // const onSubmit = data => console.log(data);
   const onSubmit = data => setFormData({
+    Title: `${data.Title}`,
     Name: `${data.firstName} ${data.lastName}`,
     Email: `${data.Email}`,
     PhoneNumber: `${data.mobileNumber}`
@@ -30,11 +31,11 @@ export default function App() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <label className="">
             First Name:
-            <input type="text" placeholder="firstName" {...register("firstName", { required: true, maxLength: 80 })} />
+            <input type="text" placeholder="First Name" {...register("firstName", { required: true, maxLength: 80 })} />
           </label>
           <label className="">
             Last Name:
-            <input type="text" placeholder="lastName" {...register("lastName", { required: true, maxLength: 100 })} />
+            <input type="text" placeholder="Last Name" {...register("lastName", { required: true, maxLength: 100 })} />
           </label>
           <label className="">
             Email:
@@ -42,7 +43,7 @@ export default function App() {
           </label>
           <label className="">
             Mobile Number
-            <input type="tel" placeholder="mobileNumber" {...register("mobileNumber", { required: true, minLength: 6, maxLength: 12 })} />
+            <input type="tel" placeholder="Mobile Number" {...register("mobileNumber", { required: true, minLength: 6, maxLength: 12 })} />
           </label>
           <select {...register("Title", { required: true })}>
             <option value="Mr">Mr</option>

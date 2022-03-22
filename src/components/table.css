@@ -1,6 +1,6 @@
 .table{
   display: flex;
-  width: 400px;
+  width: auto;
   height: auto;
   box-sizing: border-box;
   padding: 20px;
@@ -20,6 +20,6 @@ td{
 }
 
 th{
-  margin: 20px;
-  padding: 20px;
+  margin: auto;
+  padding: auto;
 }
