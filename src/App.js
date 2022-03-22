@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css'
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import Table from './components/Table.js'
 
 export default function App() {
 
@@ -56,20 +57,9 @@ export default function App() {
           <input type="submit" />
         </form>
       </div>
-      <div className="table">
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>PhoneNumber </th>
-          </tr>
-          <tr>
-            <td>{formData.Name}</td>
-            <td>{formData.Email}</td>
-            <td>{formData.PhoneNumber}</td>
-          </tr>
-        </table>
-      </div>
+<Table formData = {formData}/>
+
+
     </>
   );
 }

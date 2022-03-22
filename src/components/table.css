@@ -1,0 +1,25 @@
+.table{
+  display: flex;
+  width: 400px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: auto auto;
+  box-shadow: 0 0 10px black;
+  color: red;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+td{
+  color: black;
+  margin: auto;
+  padding: auto;
+}
+
+th{
+  margin: 20px;
+  padding: 20px;
+}
